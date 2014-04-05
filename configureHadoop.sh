@@ -15,6 +15,15 @@ else
 fi
 
 #
+# Verify hadoop working dir has been created
+#
+if [ ! -d "/var/hadoop" ]; then
+	echo "Directory /var/hadoop does not exist, creating"
+	sudo mkdir /var/hadoop
+	sudo chown hduser:hadoop /var/hadoop
+fi
+
+#
 # Verify hadoop has been installed in /opt/hadoop
 #
 if [ ! -d "/opt/hadoop" ]; then
