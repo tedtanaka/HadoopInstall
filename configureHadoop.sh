@@ -12,6 +12,7 @@ else
 	echo "hduser does not exist, adding"
 	sudo addgroup hadoop
 	sudo adduser --ingroup hadoop hduser
+	sudo adduser hduser sudo
 fi
 
 #
