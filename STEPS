@@ -1,0 +1,15 @@
+To install hadoop:
+
+- download hadoop-2.2.0.tar.gz and place in /tmp
+
+- as root, run these scripts
+-- untarHadoop.sh (untars hadoop into /opt)
+-- installJava.sh (installs JDK)
+-- createUser.sh
+-- configureHadoop.sh
+
+- as user "hduser", run (first copy files to /tmp and chmod 777)
+-- genSshKeys.sh
+-- updateEnvironment.sh
+-- copyConfigFilesAndFormatNameNode.sh
+-- startHadoop.sh
