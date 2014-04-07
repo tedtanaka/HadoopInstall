@@ -13,3 +13,7 @@ To install hadoop:
 -- updateEnvironment.sh
 -- copyConfigFilesAndFormatNameNode.sh
 -- startHadoop.sh
+
+open browser to:
+http://localhost:50070 (for NameNode)
+
