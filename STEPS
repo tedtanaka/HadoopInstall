@@ -15,5 +15,10 @@ To install hadoop:
 -- startHadoop.sh
 
 open browser to:
-http://localhost:50070 (for NameNode)
+ -http://localhost:50070 (for NameNode)
+
+test copying a file into hdfs with:
+- echo hello > /tmp/test.txt
+- hdfs dfs -put /tmp/test.txt /testInHdfs.txt (then verify with browser)
+
 
